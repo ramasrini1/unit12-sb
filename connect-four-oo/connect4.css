@@ -1,0 +1,106 @@
+/* game board table */
+h1 {
+  margin-top: 3%;
+  text-align: center;  
+  font-size: 45px;
+  font-family: 'Press Start 2P', cursive;
+  color: #f6f0f7;
+  text-shadow: 2px 2px #0a0000;
+}
+p{
+  text-align: center;
+}
+#p1-color {
+  text-align: center; 
+  margin: 15px 15px 15px 15px; 
+}
+#p2-color {
+  text-align: center; 
+  margin: 15px 15px 15px 15px; 
+}
+#board{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+}
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 2px black;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
+
+html { 
+  background: url(images/pink.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+div {
+  animation-name: bounce-top;
+  animation-duration: 2s;
+  /* animation-timing-function: ease; */
+}
+
+

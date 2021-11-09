@@ -1,0 +1,30 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="connect4.css" rel="stylesheet">
+</head>
+<body>
+<h1>Connect Four Game!</h1>
+<p id="pColor">
+  <select name="colors1" id="p1-color">
+    <option value="">Player1 color</option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+  </select>
+  <select name="colors2" id="p2-color">
+    <option value="">Player2 color</option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+  </select>
+  <button name="button" id="startBtn" type="button">Start Game</button>
+</p>
+<div id="game">
+  <table id="board"></table>
+</div>
+
+<script src="connect4.js"></script>
+
+</body>
+</html>
